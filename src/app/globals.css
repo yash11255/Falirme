@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+    --color-obsidian: #020203;
+    --color-slate-zinc: #0e0f11;
+    --color-flare-violet: #8b5cf6;
+    --color-flare-cyan: #06b6d4;
+    --color-signal-red: #ef4444;
+    --color-signal-green: #22c55e;
+    --color-border-subtle: rgba(255, 255, 255, 0.05);
+}
+
+:root {
+    --background: #020203;
+    --foreground: #fcfcfc;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.mono {
+    font-family: var(--font-mono);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Investor-Grade Background */
+.grid-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: -1;
+    mask-image: radial-gradient(circle at 50% 50%, black, transparent 80%);
+}
+
+.glow-spot {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+    filter: blur(80px);
+    pointer-events: none;
+}
+
+/* Sharp UI Elements */
+.flare-card {
+    background: rgba(14, 15, 17, 0.8);
+    border: 1px solid var(--color-border-subtle);
+    backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+}
+
+.flare-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.flare-button {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+}
+
+.flare-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.scanner-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-flare-violet), transparent);
+    animation: scan 4s linear infinite;
+    z-index: 20;
+}
+
+@keyframes scan {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.bento-item {
+    grid-column: span 12;
+}
+
+@media (min-width: 768px) {
+    .bento-item-4 {
+        grid-column: span 4;
+    }
+
+    .bento-item-6 {
+        grid-column: span 6;
+    }
+
+    .bento-item-8 {
+        grid-column: span 8;
+    }
+}
+
+/* Data Viz Elements */
+.stat-bar {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.stat-progress {
+    height: 100%;
+    background: var(--color-flare-violet);
+    transition: width 1s ease-out;
+}
