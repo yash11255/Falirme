@@ -105,14 +105,14 @@ export default function Careers() {
               <div className="w-8 h-8 bg-white text-black rounded flex items-center justify-center">
                 <Zap size={18} fill="currentColor" />
               </div>
-              <span className="text-xl font-black tracking-tighter uppercase">FlareMe</span>
+              <span className="text-xl font-black tracking-tighter uppercase">FlairMe.in</span>
             </div>
             <div className="hidden lg:flex gap-6">
               <p className="mono text-[10px] text-slate-500 font-bold uppercase tracking-widest">info@flairme.in</p>
               <p className="mono text-[10px] text-slate-500 font-bold uppercase tracking-widest">+91 9560302235</p>
             </div>
           </div>
-          <p className="mono text-[10px] text-slate-600 font-black tracking-widest uppercase">&copy; 2024 FLAREME AI. ALL RIGHTS RESERVED.</p>
+          <p className="mono text-[10px] text-slate-600 font-black tracking-widest uppercase">&copy; 2024 FLAIRME.IN AI. ALL RIGHTS RESERVED.</p>
           <div className="flex gap-8">
             <Link href="/" className="mono text-[10px] text-slate-500 hover:text-white uppercase transition-colors">Main Console</Link>
           </div>

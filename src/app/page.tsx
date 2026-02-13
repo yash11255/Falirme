@@ -99,7 +99,7 @@ export default function Home() {
               <div className="w-8 h-8 bg-white text-black rounded flex items-center justify-center">
                 <Zap size={18} fill="currentColor" />
               </div>
-              <span className="text-xl font-black tracking-tighter uppercase font-display">FlareMe</span>
+              <span className="text-xl font-black tracking-tighter uppercase font-display">FlairMe.in</span>
             </div>
             <p className="mono text-[8px] text-slate-600 leading-relaxed uppercase tracking-[0.2em] font-medium mb-6">Next-Generation Forensic Infrastructure for E-Commerce Protection.</p>
             <div className="space-y-2">
@@ -119,7 +119,7 @@ export default function Home() {
           </div>
           
           <div className="text-center md:text-right">
-            <p className="mono text-[10px] text-slate-600 mb-2 tracking-widest font-black">&copy; 2024 FLAREME AI [IND-CORE-LABS].</p>
+            <p className="mono text-[10px] text-slate-600 mb-2 tracking-widest font-black">&copy; 2024 FLAIRME.IN AI [IND-CORE-LABS].</p>
             <p className="mono text-[8px] text-flare-violet mb-4 tracking-widest font-black uppercase">Architected in Delhi, India 🇮🇳</p>
             <div className="flex gap-8 justify-center md:justify-end">
               <Link href="#" className="mono text-[8px] text-slate-400 hover:text-white transition-colors tracking-widest uppercase">Privacy</Link>
