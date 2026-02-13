@@ -22,7 +22,7 @@ export default function Navbar() {
             <Zap size={18} fill="currentColor" />
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-black tracking-tighter uppercase text-white leading-none">FlareMe</span>
+            <span className="text-xl font-black tracking-tighter uppercase text-white leading-none">FlairMe.in</span>
             <span className="mono text-[8px] text-flare-violet font-black uppercase tracking-widest mt-1">HQ: DELHI, IN 🇮🇳</span>
           </div>
         </Link>

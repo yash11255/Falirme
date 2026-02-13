@@ -18,7 +18,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FlareMe | AI Return Fraud Prevention",
+  title: "FlairMe | AI Return Fraud Prevention",
   description: "Bespoke AI cybersecurity for E-commerce. Detect manipulated return images with 99.9% accuracy.",
 };
 

@@ -118,7 +118,7 @@ export default function Problem() {
                     <h3 className="text-3xl font-black text-white uppercase italic tracking-tight">Financial Hemorrhage</h3>
                   </div>
                   <p className="text-lg text-slate-400 leading-relaxed font-medium max-w-2xl">
-                    Every fraudulent refund is pure profit lost. When accounting for capital, shipping, and lost inventory, most brands lose <span className="text-white">$261 per incident</span>. FlareMe intercepts this leakage at the point of request.
+                    Every fraudulent refund is pure profit lost. When accounting for capital, shipping, and lost inventory, most brands lose <span className="text-white">$261 per incident</span>. FlairMe.in intercepts this leakage at the point of request.
                   </p>
                 </div>
                 
