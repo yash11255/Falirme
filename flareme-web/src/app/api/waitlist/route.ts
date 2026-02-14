@@ -5,13 +5,11 @@ export async function POST(req: Request) {
         const data = await req.json();
 
         // The Google Apps Script Web App URL
-        // The user will need to replace this with their actual deployed script URL
-        const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
+        const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL || "https://script.google.com/macros/s/AKfycbwCCO3F5h2tbn4aLruEzj41mPujzLBbRllpRftk9_LA86RrhqqftBgtZelGwt679VHH7Q/exec";
 
         if (!GOOGLE_SCRIPT_URL) {
             console.error('GOOGLE_SCRIPT_URL is not defined');
-            // For now, we'll return success to not block the UI if they haven't set it up yet
-            return NextResponse.json({ success: true, message: 'Mock success - GOOGLE_SCRIPT_URL missing' });
+            return NextResponse.json({ success: false, message: 'GOOGLE_SCRIPT_URL missing' }, { status: 500 });
         }
 
         const response = await fetch(GOOGLE_SCRIPT_URL, {
